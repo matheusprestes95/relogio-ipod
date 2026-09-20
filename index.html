@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html manifest="manifest.appcache">
+<head>
+  <meta charset="UTF-8">
+  <!-- Impede o utilizador de dar zoom ou rolar a tela -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <title>Relógio de Mesa</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <!-- Relógio Grande -->
+    <div id="clock">00:00</div>
+
+    <!-- Bloco do Clima abaixo da hora -->
+    <div class="weather-box">
+      <!-- Contentor do SVG injetado pelo JS -->
+      <div id="weather-icon-container"></div>
+      <span id="temperature">--°C</span>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
