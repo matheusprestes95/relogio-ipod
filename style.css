@@ -15,52 +15,61 @@ html, body {
   overflow: hidden;
 }
 
+/* Alinhamento ao centro compatível com WebKit antigo */
 body {
+  display: -webkit-box;
   display: flex;
+  -webkit-box-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
   align-items: center;
+  text-align: center;
 }
 
 .container {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   width: 100%;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
 }
 
-/* Relógio em tamanho gigante (Aumentado de 110px para 145px) */
+/* Relógio gigante em destaque */
 #clock {
-  font-size: 145px;
+  font-size: 140px;
   font-weight: 200;
   letter-spacing: -4px;
-  line-height: 0.85;
-  margin-bottom: 8px;
+  line-height: 0.9;
+  margin-bottom: 6px;
 }
 
 /* Bloco do Clima */
 .weather-box {
+  display: -webkit-box;
   display: flex;
+  -webkit-box-align: center;
   align-items: center;
+  -webkit-box-pack: center;
   justify-content: center;
 }
 
 #weather-icon-container {
   display: inline-block;
-  margin-right: 10px;
+  margin-right: 8px;
 }
 
-/* Ícone do Clima aumentado */
 #weather-icon-container svg {
-  width: 42px;
-  height: 42px;
+  width: 38px;
+  height: 38px;
   vertical-align: middle;
 }
 
-/* Temperatura aumentada (De 28px para 38px) */
 #temperature {
-  font-size: 38px;
+  font-size: 34px;
   font-weight: 300;
   color: #cccccc;
   vertical-align: middle;
